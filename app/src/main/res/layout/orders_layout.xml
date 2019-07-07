@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/order_user_name"
+            android:layout_marginLeft="5dp"
+            android:text="Name : "
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_user_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:layout_toRightOf="@+id/user_name"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ph."
+            android:textColor="#ffffff"
+            android:layout_toLeftOf="@+id/order_phone_number"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="viewEnd"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:id="@+id/order_phone_number"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textAlignment="viewEnd"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_below="@+id/order_phone_number"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+
+            />
+
+        <TextView
+            android:id="@+id/order_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:layout_toRightOf="@+id/total_price"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/order_phone_number"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            />
+
+
+        <TextView
+            android:id="@+id/address_city"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Adress : "
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/order_total_price"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+
+            />
+
+        <TextView
+            android:id="@+id/order_address_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/address_city"
+            android:text="Adress, City"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/order_total_price"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Order On : "
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_below="@+id/order_address_city"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+
+            />
+
+        <TextView
+            android:id="@+id/order_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/date_time"
+            android:layout_marginRight="5dp"
+            android:text="Date, Time"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_below="@+id/order_address_city"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            />
+
+        <Button
+            android:id="@+id/show_all_products_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="100dp"
+            android:layout_below="@+id/order_date_time"
+            android:layout_margin="19dp"
+            android:background="#ffffff"
+            android:text="Show This Order Products"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
